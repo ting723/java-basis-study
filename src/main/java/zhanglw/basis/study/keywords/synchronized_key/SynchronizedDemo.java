@@ -1,4 +1,4 @@
-package zhanglw.basis.study.sync;
+package zhanglw.basis.study.keywords.synchronized_key;
 
 /**
  * Created by zhanglw on 2016/12/13.
