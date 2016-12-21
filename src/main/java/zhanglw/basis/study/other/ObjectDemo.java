@@ -9,4 +9,21 @@ public class ObjectDemo {
 
     public native void testObjMethod();
 
+    /**
+     * 显示继承
+     * 默认是隐式继承
+     */
+    class ObjectTest extends Object{
+    }
+
+    public static void testArry() throws Throwable {
+        ObjectDemo[] ab = new ObjectDemo[5];
+        ab.finalize();
+        System.out.println(ab);
+    }
+
+    public static void main(String[] args) throws Throwable {
+        testArry();
+    }
+
 }
