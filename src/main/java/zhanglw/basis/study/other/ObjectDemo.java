@@ -14,12 +14,21 @@ public class ObjectDemo {
      * 默认是隐式继承
      */
     class ObjectTest extends Object{
+        @Override
+        protected void finalize() throws Throwable {
+            super.finalize();
+        }
     }
 
     public static void testArry() throws Throwable {
         ObjectDemo[] ab = new ObjectDemo[5];
         ab.finalize();
+        ab.equals(ab);
         System.out.println(ab);
+    }
+
+    public void test() throws Throwable {
+        new ObjectTest().finalize();
     }
 
     public static void main(String[] args) throws Throwable {
