@@ -22,7 +22,7 @@ public class ObjectDemo {
 
     public static void testArry() throws Throwable {
         ObjectDemo[] ab = new ObjectDemo[5];
-        ab.finalize();
+//        ab.finalize();
         ab.equals(ab);
         System.out.println(ab);
     }
